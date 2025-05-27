@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Oleksandr Reshetnyak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <button id="themeToggle" class="theme-toggle">🌞 Світлий / 🌙 Темний</button>
+
+    <main>
+        <header>
+            <h1>Oleksandr Reshetnyak</h1>
+            <p>Lviv, Ukraine | +380992039656 | oleksandr.reshetniak.kb.2022@lpnu.ua</p>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Motivated beginner in web development with a solid understanding of HTML. Skilled in creating structured and semantic web pages. 
+                Fast learner, detail-oriented, and eager to build a career in the IT field.
+            </p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <p>Currently have no work experience in the IT field, but actively learning web development and working on educational projects.</p>
+            <p><strong>Intern (Student Project)</strong><br>Created resume pages using semantic HTML tags.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p><strong>2022 – Present</strong></p>
+            <p><strong>Lviv Polytechnic National University</strong><br>Major: Cybersecurity</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML: creating semantic structure</li>
+                <li>Tags: &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;a&gt;, &lt;img&gt;</li>
+                <li>Attributes: href, src, alt, title</li>
+                <li>Basic knowledge of site structure</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <p>Responsible, motivated, and eager to learn. Detail-oriented and adaptable to new technologies.</p>
+        </section>
+
+        <section id="comments">
+            <h2>Comments</h2>
+            <div id="commentsList"></div>
+        </section>
+
+        <footer>
+            <p>© 2025 Oleksandr Reshetnyak</p>
+            <div id="systemInfo"></div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Модальне вікно -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h2>Зворотній зв'язок</h2>
+    <form action="https://formspree.io/f/xvgajlde" method="POST">
+      <label>Ім’я:<br><input type="text" name="name" required></label><br>
+      <label>Email:<br><input type="email" name="email" required></label><br>
+      <label>Телефон:<br><input type="tel" name="phone" required></label><br>
+      <label>Повідомлення:<br><textarea name="message" required></textarea></label><br>
+      <button type="submit">Відправити</button>
+    </form>
+  </div>
+</div>
+
+
+</html>
